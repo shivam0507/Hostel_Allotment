@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="C:\Users\gupta\Desktop\hostel_allotment\css\footer.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="jscript/login.js"></script>
 		<link rel="stylesheet" href="css/carousal.css">
 	</head>
 	
@@ -69,19 +70,20 @@
 					</div>
 					<!-- body(form)-->
 					<div class="modal-body">
-						<form role="form">
+						<form role="form" method="post" action="include/login.php">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Scholar Number">
+								<input type="text" class="form-control" placeholder="Scholar Number" name="scholar_no">
 							</div>
 							<div class="form-group">
-								<input type="password" class="form-control" placeholder="Password">
+								<input type="password" class="form-control" placeholder="Password" name="lpwd">
 							</div>
-						</form>
+						
 					</div>
 					<!-- button -->
 					<div class="modal-footer">
-						<button class="btn btn-alert btn-block">Log In</button>
+						<input type="submit" class="btn btn-alert btn-block" name="login" value="Log In">
 					</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -98,7 +100,7 @@
 					</div>
 					<!-- body(form)-->
 					<div class="modal-body">
-						<form role="form">
+						<form role="form" method="post" action="include/signup.php">
 							<div class="form-group"> 
 								<div class="input-group">
 									<div class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></div>
@@ -141,12 +143,13 @@
 									<input type="text" class="form-control" placeholder="Mobile" name="mob">
 								</div>
 							</div>
-						</form>
+						
 					</div>
 					<!-- button -->
 					<div class="modal-footer">
-						<button class="btn btn-success btn-block" onclick="" name="signup">Sign Up</button>
+						<input type="submit" class="btn btn-success btn-block"  name="signup" value="SignUp"> 
 					</div>
+					</form>
 				</div>
 			</div>
 		</div>
